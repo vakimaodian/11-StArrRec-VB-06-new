@@ -26,7 +26,7 @@
         students(0).phoneNo = "0123456789"
         students(0).paid = False
         students(1).firstname = "Jennifer"
-        students(1).lastname = "Lawrence"
+        students(1).lastname = "Lawrence"       'month/date/year'
         students(1).DOB = "8/15/90"
         students(1).gender = "f"
         students(1).avMk = 88.2
@@ -55,7 +55,7 @@
         students(studentCount).avMk = txtAvMk.Text
         students(studentCount).phoneNo = txtPhone.Text
         students(studentCount).paid = chkPaid.Checked
-        studentCount += 1
+        studentCount = 1
         'return text boxes to blank ready for next entry
         txtFirstName.Text = ""
         txtLastName.Text = ""

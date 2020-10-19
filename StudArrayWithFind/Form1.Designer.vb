@@ -43,7 +43,7 @@ Partial Class Form1
         'txtFirstName
         '
         Me.txtFirstName.Location = New System.Drawing.Point(48, 102)
-        Me.txtFirstName.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtFirstName.Margin = New System.Windows.Forms.Padding(4)
         Me.txtFirstName.Name = "txtFirstName"
         Me.txtFirstName.Size = New System.Drawing.Size(132, 22)
         Me.txtFirstName.TabIndex = 0
@@ -81,7 +81,7 @@ Partial Class Form1
         'txtLastName
         '
         Me.txtLastName.Location = New System.Drawing.Point(189, 102)
-        Me.txtLastName.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtLastName.Margin = New System.Windows.Forms.Padding(4)
         Me.txtLastName.Name = "txtLastName"
         Me.txtLastName.Size = New System.Drawing.Size(132, 22)
         Me.txtLastName.TabIndex = 3
@@ -99,7 +99,7 @@ Partial Class Form1
         'txtDOB
         '
         Me.txtDOB.Location = New System.Drawing.Point(331, 102)
-        Me.txtDOB.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtDOB.Margin = New System.Windows.Forms.Padding(4)
         Me.txtDOB.Name = "txtDOB"
         Me.txtDOB.Size = New System.Drawing.Size(132, 22)
         Me.txtDOB.TabIndex = 5
@@ -117,7 +117,7 @@ Partial Class Form1
         'txtGender
         '
         Me.txtGender.Location = New System.Drawing.Point(472, 102)
-        Me.txtGender.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtGender.Margin = New System.Windows.Forms.Padding(4)
         Me.txtGender.Name = "txtGender"
         Me.txtGender.Size = New System.Drawing.Size(132, 22)
         Me.txtGender.TabIndex = 7
@@ -135,7 +135,7 @@ Partial Class Form1
         'txtAvMk
         '
         Me.txtAvMk.Location = New System.Drawing.Point(613, 102)
-        Me.txtAvMk.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtAvMk.Margin = New System.Windows.Forms.Padding(4)
         Me.txtAvMk.Name = "txtAvMk"
         Me.txtAvMk.Size = New System.Drawing.Size(132, 22)
         Me.txtAvMk.TabIndex = 9
@@ -143,7 +143,7 @@ Partial Class Form1
         'btnAddStud
         '
         Me.btnAddStud.Location = New System.Drawing.Point(52, 159)
-        Me.btnAddStud.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnAddStud.Margin = New System.Windows.Forms.Padding(4)
         Me.btnAddStud.Name = "btnAddStud"
         Me.btnAddStud.Size = New System.Drawing.Size(139, 28)
         Me.btnAddStud.TabIndex = 11
@@ -155,7 +155,7 @@ Partial Class Form1
         Me.lstStud.FormattingEnabled = True
         Me.lstStud.ItemHeight = 16
         Me.lstStud.Location = New System.Drawing.Point(48, 249)
-        Me.lstStud.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.lstStud.Margin = New System.Windows.Forms.Padding(4)
         Me.lstStud.Name = "lstStud"
         Me.lstStud.Size = New System.Drawing.Size(709, 196)
         Me.lstStud.TabIndex = 15
@@ -209,7 +209,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txtFirstName)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Form1"
         Me.Text = "Student entry form"
         Me.ResumeLayout(False)
