@@ -211,7 +211,7 @@ Partial Class Form1
         Me.Controls.Add(Me.txtFirstName)
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Form1"
-        Me.Text = "v1.6.1 Student entry form"
+        Me.Text = "v1.7.1 Student entry form"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

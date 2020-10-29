@@ -65,6 +65,48 @@
         chkPaid.Checked = False
         displayList()
     End Sub
+    Private Sub
+        'Validate that the gender field holds "m" of "f"
+        'ASCII for F=70, M=77, f=102, m=109
+        'MsgBox("ASCII code is " & Asc(txtGender.Text), MsgBoxStyle.Exclamation, "Problem with Gender")
+                If Asc(txtGender.Text) <> 70 Then
+
+            If Asc(txtGender.Text) <> 77 Then
+
+                If Asc(txtGender.Text) <> 102 Then
+
+                    If Asc(txtGender.Text) <> 109 Then
+
+                        MsgBox("Please enter 'm' or 'f'", MsgBoxStyle.Exclamation, "Problem with Gender")
+
+                        txtGender.Focus()
+
+                        Exit Sub
+
+                    End If
+
+                    txtGender.Focus()
+
+                    Exit Sub
+
+                End If
+
+                txtGender.Focus()
+
+                Exit Sub
+
+            End If
+
+            txtGender.Focus()
+
+            Exit Sub
+
+        End If
+
+
+    End Sub
+
+
     Private Sub displayList()
         'clear the list box as it keeps the earlier loop
         lstStud.Items.Clear()
