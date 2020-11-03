@@ -76,7 +76,7 @@ Partial Class Form1
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(76, 17)
         Me.Label3.TabIndex = 4
-        Me.Label3.Text = "Last Name"
+        Me.Label3.Text = "Last Name" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'txtLastName
         '
@@ -89,12 +89,12 @@ Partial Class Form1
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(331, 79)
+        Me.Label4.Location = New System.Drawing.Point(340, 62)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(87, 17)
+        Me.Label4.Size = New System.Drawing.Size(87, 34)
         Me.Label4.TabIndex = 6
-        Me.Label4.Text = "Date of Birth"
+        Me.Label4.Text = "Date of Birth" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(d/m/yyyy)" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'txtDOB
         '
@@ -107,12 +107,12 @@ Partial Class Form1
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(472, 79)
+        Me.Label5.Location = New System.Drawing.Point(477, 62)
         Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(56, 17)
+        Me.Label5.Size = New System.Drawing.Size(56, 34)
         Me.Label5.TabIndex = 8
-        Me.Label5.Text = "Gender"
+        Me.Label5.Text = "Gender" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(m or f)"
         '
         'txtGender
         '
@@ -125,12 +125,12 @@ Partial Class Form1
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(613, 79)
+        Me.Label6.Location = New System.Drawing.Point(610, 64)
         Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(83, 17)
+        Me.Label6.Size = New System.Drawing.Size(87, 34)
         Me.Label6.TabIndex = 10
-        Me.Label6.Text = "Average Mk"
+        Me.Label6.Text = "Average Mk " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(0-100)"
         '
         'txtAvMk
         '
@@ -142,7 +142,7 @@ Partial Class Form1
         '
         'btnAddStud
         '
-        Me.btnAddStud.Location = New System.Drawing.Point(52, 159)
+        Me.btnAddStud.Location = New System.Drawing.Point(613, 156)
         Me.btnAddStud.Margin = New System.Windows.Forms.Padding(4)
         Me.btnAddStud.Name = "btnAddStud"
         Me.btnAddStud.Size = New System.Drawing.Size(139, 28)
@@ -172,7 +172,7 @@ Partial Class Form1
         '
         'txtPhone
         '
-        Me.txtPhone.Location = New System.Drawing.Point(331, 176)
+        Me.txtPhone.Location = New System.Drawing.Point(48, 156)
         Me.txtPhone.Mask = "(999) 000-0000"
         Me.txtPhone.Name = "txtPhone"
         Me.txtPhone.Size = New System.Drawing.Size(129, 22)
@@ -181,7 +181,7 @@ Partial Class Form1
         'chkPaid
         '
         Me.chkPaid.AutoSize = True
-        Me.chkPaid.Location = New System.Drawing.Point(475, 177)
+        Me.chkPaid.Location = New System.Drawing.Point(207, 156)
         Me.chkPaid.Name = "chkPaid"
         Me.chkPaid.Size = New System.Drawing.Size(58, 21)
         Me.chkPaid.TabIndex = 6
@@ -211,7 +211,7 @@ Partial Class Form1
         Me.Controls.Add(Me.txtFirstName)
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Form1"
-        Me.Text = "v1.7.1 Student entry form"
+        Me.Text = "v1.7.5 Student entry form - Validation on Submit  - still 1 error"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

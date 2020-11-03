@@ -20,26 +20,26 @@
         'load 4 test records
         students(0).firstname = "Johnny"
         students(0).lastname = "Depp"
-        students(0).DOB = "9/6/63"
+        students(0).DOB = "6/9/63"
         students(0).gender = "m"
         students(0).avMk = 78.2
         students(0).phoneNo = "0123456789"
         students(0).paid = False
         students(1).firstname = "Jennifer"
         students(1).lastname = "Lawrence"        'month/date/year'
-        students(1).DOB = "8/15/90"
+        students(1).DOB = "15/8/90"
         students(1).gender = "f"
         students(1).avMk = 88.2
         students(1).phoneNo = "0987654321"
         students(1).paid = True
         students(2).firstname = "George"
         students(2).lastname = "Clooney"
-        students(2).DOB = "6/5/61"
+        students(2).DOB = "5/6/61"
         students(2).gender = "f"
         students(2).avMk = 68.2
         students(3).firstname = "Scarlett"
         students(3).lastname = "Johansson"
-        students(3).DOB = "11/22/84"
+        students(3).DOB = "22/11/84"
         students(3).gender = "f"
         students(3).avMk = 72.2
         'set the student count to the number of students which have been entered
@@ -65,45 +65,49 @@
         chkPaid.Checked = False
         displayList()
     End Sub
-    Private Sub
+    Private Sub Form1()
         'Validate that the gender field holds "m" of "f"
         'ASCII for F=70, M=77, f=102, m=109
         'MsgBox("ASCII code is " & Asc(txtGender.Text), MsgBoxStyle.Exclamation, "Problem with Gender")
-                If Asc(txtGender.Text) <> 70 Then
-
+        If Asc(txtGender.Text) <> 70 Then
             If Asc(txtGender.Text) <> 77 Then
-
                 If Asc(txtGender.Text) <> 102 Then
-
                     If Asc(txtGender.Text) <> 109 Then
-
                         MsgBox("Please enter 'm' or 'f'", MsgBoxStyle.Exclamation, "Problem with Gender")
-
                         txtGender.Focus()
-
                         Exit Sub
-
                     End If
-
                     txtGender.Focus()
-
                     Exit Sub
-
                 End If
-
                 txtGender.Focus()
-
                 Exit Sub
-
             End If
-
             txtGender.Focus()
-
             Exit Sub
-
         End If
 
+        'Validate that first name field is NOT blank 
+        If txtFirstName.Text = "" Then
+            'MsgBox("Please enter a "first name'", MsgBoxStyle.Exclamation, "Check First name field")
+            MessageBox.Show("Please enter a 'first name'", "Check First Name field", MessageBoxButtons.OK, MessageBoxIcon.Asterisk)
+            txtFirstName.Focus()
+            Exit Sub
+        End If
 
+        'Validate that the phone # field has 10 digits
+        If Not Len(Trim(txtPhone.Text)) = 12 Then
+            MsgBox("Please enter 10 digits for the phone number",)
+            txtPhone.Focus()
+            Exit Sub
+        End If
+
+        'Validate that the DoB field is between year 1960 and year 2010
+        If Not (txtDOB.Text >= #1/1/1998# AndAlso txtDOB.Text < #1/1/2005#) Then
+            MsgBox("Please enter in a DoB between 1960 and 2010 in the format 'd/m/yyyy'", MessageBoxButtons.OK, MessageBoxIcon.Asterisk)
+            txtDOB.Focus()
+            Exit Sub
+        End If
     End Sub
 
 
